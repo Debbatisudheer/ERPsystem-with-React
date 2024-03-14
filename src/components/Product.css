@@ -1,0 +1,135 @@
+/* Product.css */
+
+.container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.add-product-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.add-product {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.add-button,
+.add-button-save {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button-save {
+  margin-top: 10px;
+}
+
+.product-table {
+  overflow-x: auto;
+}
+
+.product-header,
+.product-row {
+  display: flex;
+}
+
+.product-cell {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.product-cell:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.product-cell input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.product-cell button {
+  padding: 5px 10px;
+
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.save{
+  background-color: #687;
+}
+
+.product-button{
+  padding: 5px 10px;
+  background-color: #436;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .product-cell {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .product-cell button{
+    margin: 2px;
+  }
+
+
+  .product-heading {
+    font-size: 20px;
+  }
+
+  .add-product-heading {
+    font-size: 16px;
+  }
+
+  .add-button,
+  .add-button-save {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .product-cell input[type="text"] {
+    padding: 3px;
+    font-size: 12px;
+  }
+
+  .product-cell button {
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+}
